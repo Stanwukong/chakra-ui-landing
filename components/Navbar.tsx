@@ -1,5 +1,4 @@
 
-
 import {
 	Box,
 	Flex,
@@ -70,27 +69,30 @@ import {
 			justify={'flex-end'}
 			direction={'row'}
 			spacing={6}>
-			<Button
-			  as={'a'}
-			  fontSize={'sm'}
-			  fontWeight={400}
-			  variant={'link'}
-			  href='/signin'>
-			  Sign In
-			</Button>
-			<Button
-			  as={'a'}
-			  display={{ base: 'none', md: 'inline-flex' }}
-			  fontSize={'sm'}
-			  fontWeight={600}
-			  color={'white'}
-			  bg={'pink.400'}
-			  href='/signup'
-			  _hover={{
-				bg: 'pink.300',
-			  }}>
-			  Sign Up
-			</Button>
+				<Link href='/signin'>
+					<Button
+						as={'a'}
+						fontSize={'sm'}
+						fontWeight={400}>
+					Sign In
+					</Button>
+				</Link>
+			
+			<Link href='/signup'>
+				<Button
+				as={'a'}
+				display={{ base: 'none', md: 'inline-flex' }}
+				fontSize={'sm'}
+				fontWeight={600}
+				color={'white'}
+				bg={'pink.400'}
+				_hover={{
+					bg: 'pink.300',
+				}}>
+				Sign Up
+				</Button>
+			</Link>
+			
 		  </Stack>
 		</Flex>
   
